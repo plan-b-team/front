@@ -1,0 +1,181 @@
+input {
+  outline: none;
+  padding-left: 20px;
+}
+
+.sign-in {
+  @include flex(start, center);
+
+  @include mobile {
+    @include column-flex;
+    width: 375px;
+    height: 300px;
+  }
+
+  &__logo-container {
+    width: 49.948vw;
+    height: 100vh;
+    padding: 50px 2.604vw 50px 0;
+    background: #ffe0e0;
+
+    @include mobile {
+      width: 375px;
+      height: 300px;
+      padding: 0;
+      background-color: white;
+    }
+
+    &__logo-box {
+      @include column-flex;
+      position: relative;
+      width: 41.667vw;
+      height: 300px;
+      margin-top: 9.259vh;
+
+      @include mobile {
+        width: 375px;
+        height: 100px;
+        margin-top: 250px;
+      }
+
+      &__plan {
+        @include text-style(200, white, 400);
+        text-shadow: 3px 3px 5px #f6cccc;
+
+        @include mobile {
+          @include text-style(200, white, 400);
+          text-shadow: 3px 3px 5px #f6cccc;
+        }
+      }
+
+      &__b {
+        @include text-style(200, #f6cccc, 400);
+        text-shadow: 3px 3px 5px white;
+        position: absolute;
+        top: 16.667vh;
+        left: 36.458vw;
+
+        @include mobile {
+          @include text-style(200, #f6cccc, 400);
+          position: absolute;
+          top: 50px;
+          left: 250px;
+          text-shadow: 3px 3px 5px white;
+        }
+      }
+    }
+  }
+  &__login-container {
+    width: 49.948vw;
+    height: 100vh;
+    padding: 4.63vh 0 4.63vh 2.604vw;
+
+    @include mobile {
+      width: 375px;
+      height: 300px;
+      margin-top: 120px;
+      padding: 0;
+      background-color: white;
+    }
+
+    &__login-box {
+      @include column-flex(start, center);
+      gap: 10px;
+      margin-top: 23.148vh;
+
+      @include mobile {
+        margin-top: 0;
+        gap: 10px;
+      }
+
+      &_title {
+        @include text-style(42, #f6cccc, 700);
+        margin-bottom: 2.778vh;
+
+        @include mobile {
+          @include text-style(88, #f6cccc, 700);
+          margin-bottom: 0;
+        }
+      }
+
+      &_id-input {
+        @include text-style(16, #f6cccc, 400);
+        width: 38.125vw;
+        height: 4.63vh;
+        border: 1px solid #f6cccc;
+        border-radius: 12px;
+
+        @include mobile {
+          @include text-style(80, #f6cccc, 400);
+          width: 300px;
+          height: 40px;
+          border: 1px solid #f6cccc;
+          border-radius: 12px;
+        }
+      }
+
+      &_password-input {
+        @include text-style(16, #f6cccc, 400);
+        width: 38.125vw;
+        height: 4.63vh;
+        border: 1px solid #f6cccc;
+        border-radius: 12px;
+
+        @include mobile {
+          @include text-style(80, #f6cccc, 400);
+          width: 300px;
+          height: 40px;
+          border: 1px solid #f6cccc;
+          border-radius: 12px;
+        }
+      }
+
+      &_login-btn {
+        @include flex;
+        @include text-style(16, white, 400);
+        width: 38.125vw;
+        height: 4.63vh;
+        border-radius: 12px;
+        background: #f6cccc;
+        cursor: pointer;
+
+        @include mobile {
+          @include text-style(80, white, 400);
+          width: 300px;
+          height: 40px;
+          border: 1px solid #f6cccc;
+          border-radius: 12px;
+        }
+      }
+
+      &__finds {
+        @include flex(end, center);
+        @include text-style(15, #cccccc, 400);
+        width: 38.125vw;
+        gap: 30px;
+        cursor: pointer;
+
+        @include mobile {
+          @include flex(end, center);
+          @include text-style(60, #cccccc, 400);
+          width: 300px;
+          gap: 10px;
+        }
+      }
+
+      &__sign-up-btn {
+        @include flex(end, center);
+        @include text-style(15, #cccccc, 400);
+        width: 38.125vw;
+        cursor: pointer;
+
+        @include mobile {
+          @include flex(center, end);
+          @include text-style(60, #cccccc, 400);
+          width: 300px;
+          margin-top: 150px;
+        }
+      }
+    }
+  }
+}
