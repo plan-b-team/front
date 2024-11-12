@@ -1,0 +1,23 @@
+.navWrapper {
+  @include flex(start, center);
+
+  &__planLogo {
+    @include text-style(100, #fff, 700);
+    text-shadow: 3px 3px 5px #f6cccc;
+  }
+
+  &__bLogo {
+    @include text-style(100, #f6cccc, 700);
+  }
+
+  &__subtitleWrapper {
+    @include flex(between, center);
+    @include text-style(24, #ccc, 700);
+    width: 40vw;
+    margin-left: 86px;
+    cursor: pointer;
+    :active {
+      color: #f6cccc;
+    }
+  }
+}
